@@ -2,7 +2,7 @@ import axios from "axios"
 
 export async function fetchUniversityData() {
   try {
-    const response = await axios.get("http://localhost:5000/api/universities") // Adjust URL if needed
+    const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/universities`) // Adjust URL if needed
     console.log(response.data)
     return response.data.universities || [] // Assuming backend returns { universities: [...] }
   } catch (error) {

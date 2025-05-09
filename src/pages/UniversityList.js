@@ -10,7 +10,7 @@ const UniversityList = () => {
 
   // Fetch universities from the backend API
   useEffect(() => {
-    axios.get('http://localhost:5000/api/universities')
+    axios.get(`${process.env.REACT_APP_API_URL}/api/universities`)
       .then(response => {
         setUniversities(response.data.universities);
         setLoading(false);
