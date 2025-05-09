@@ -1,0 +1,25 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --primary: rgba(255, 255, 255, 1);
+  --secondary-2: rgba(219, 68, 68, 1);
+  --title-16px-regular-font-family: "Poppins", Helvetica;
+  --title-16px-regular-font-size: 16px;
+  --title-16px-regular-font-style: normal;
+  --title-16px-regular-font-weight: 400;
+  --title-16px-regular-letter-spacing: 0px;
+  --title-16px-regular-line-height: 24px;
+  --title-20px-medium-font-family: "Poppins", Helvetica;
+  --title-20px-medium-font-size: 20px;
+  --title-20px-medium-font-style: normal;
+  --title-20px-medium-font-weight: 500;
+  --title-20px-medium-letter-spacing: 0px;
+  --title-20px-medium-line-height: 28px;
+}
